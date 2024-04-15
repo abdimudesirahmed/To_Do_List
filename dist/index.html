@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-orange-300 flex justify-center items-center h-screen">
+  <div class="w-full max-w-4xl  mx-3">
+    <div class="text-center mb-5">
+        <h1 class="text-5xl uppercase font-bold">ToDo List</h1>
+    </div>
+    <div>
+        <form class="flex justify-center" id="todoForm" action="#" method="POST">
+            <input class="bg-orange-100 px-5 py-2 rounded-l-full" type="text" name="todo" id="todoInput" placeholder="Add New Task">
+            <input class="bg-blue-900 px-5 rounded-r-full" type="submit" value="Add">
+        </form>
+    </div>
+    <div class="bg-white mt-5 p-4 rounded-lg shadow-lg">
+        <div>
+            <h1 class="text-lg font-bold mb-0 leading-none text-gray-600">Todo's</h1>
+            <small class="text-xs inline-block mt-0">2 todos pending, 1 completed</small>
+        </div>
+        <div class="mt-3">
+            <table class="w-full" id="todoTable">
+                <th>
+                    <tr class="bg-green-200 ">
+                       <th class="text-center py-2 rounded-tl-lg">#</th>
+                       <th class="text-left py-2">Details</th> 
+                       <th class="text-left py-2 rounded-tr-lg">Action</th> 
+                       
+                    </tr>
+                </th>
+                <tbody id="todoBody">
+                    <tr class="odd:bg-orange-50 even:bg-orange-100">
+                        <td class="py-2 text-center">   <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" /></td>
+                        <td class="py-2 text-left line-through">BOOTSTRAP</td>
+                        <td class="py-2">
+                            <div class="flex flex-row space-x-2">
+                           <h3 class="text-red-600 font-bold" id="todoId">Delete</h3>
+                           <h3 class="text-blue-600 font-bold">Edit</h3> 
+                        </div>
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-orange-50 even:bg-orange-100">
+                        <td class="py-2 text-center">   <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" /></td>
+                        <td class="py-2 text-left line-through">JS</td>
+                        <td class="py-2">
+                            <div class="flex flex-row space-x-2">
+                           <h3 class="text-red-600 font-bold">Delete</h3>
+                           <h3 class="text-blue-600 font-bold">Edit</h3> 
+                        </div>
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-orange-50 even:bg-orange-100">
+                        <td class="py-2 text-center">   <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" /></td>
+                        <td class="py-2 text-left">HTML</td>
+                        <td class="py-2">
+                            <div class="flex flex-row space-x-2">
+                           <h3 class="text-red-600 font-bold">Delete</h3>
+                           <h3 class="text-blue-600 font-bold">Edit</h3> 
+                        </div>
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-orange-50 even:bg-orange-100">
+                        <td class="py-2 text-center">   <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" /></td>
+                        <td class="py-2 text-left">CSS</td>
+                        <td class="py-2">
+                            <div class="flex flex-row space-x-2">
+                           <h3 class="text-red-600 font-bold">Delete</h3>
+                           <h3 class="text-blue-600 font-bold">Edit</h3> 
+                        </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  <script src="script.ts"></script>
+</body>
+</html>
